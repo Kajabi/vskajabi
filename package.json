@@ -2,6 +2,7 @@
   "name": "kajabi",
   "displayName": "Kajabi",
   "description": "Kajabi Utilities",
+  "publisher": "kajabi",
   "repository": "https://github.com/Kajabi/vskajabi",
   "version": "0.0.1",
   "engines": {
