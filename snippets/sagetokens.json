@@ -1,0 +1,67 @@
+{
+  "sage-border": {
+    "prefix": "sage-border",
+    "body": "sage-border(${1|light,default,radius-small,radius,radius-large,radius-x-large,radius-round|})$2",
+    "description": "System border style mixin. If empty, maps to the default value `rem(1px) solid sage-color(grey, 300)`"
+  },
+  "sage-breakpoint": {
+    "prefix": "sage-breakpoint",
+    "body": "sage-breakpoint(${1|xs-max,sm-min,sm-max,md-min,md-max,lg-min,lg-max,xl-min,xxl-min|})$2",
+    "description": "Breakpoint value for min-width or max-width sizes. If empty, maps to the default value `sm-max` (767px)"
+  },
+  "sage-color": {
+    "prefix": "sage-color",
+    "body": "sage-color(${1|primary,sage,yellow,red,orange,purple,grey,charcoal,white,black|}, ${2|100,200,300,400,500|})$3",
+    "description": "Sage color with (optional) tint/shade value"
+  },
+  "sage-color-combo": {
+    "prefix": "sage-color-combo",
+    "body": "sage-color-combo(${1|draft,published,info,locked,warning,danger|}, ${2|default,subtle,bold|}, ${3|foreground,foreground-accent,background,background-accent,icon-background-accent|})$4",
+    "description": "Sage color combos. Note that not all color types are available for combinations."
+  },
+  "sage-container": {
+    "prefix": "sage-container",
+    "body": "sage-container(${1|tiny,xs,sm,md,lg,xl,full|})$2",
+    "description": "Sage container size mixin. If empty, defaults to `md` (1200px)"
+  },
+  "sage-font-size": {
+    "prefix": "sage-font-size",
+    "body": "sage-font-size(${1|2xs,xs,sm,md,lg,xl,2xl,3xl,4xl|})$2",
+    "description": "Sage font-size mixin. If empty, defaults to `md`"
+  },
+  "sage-font-weight": {
+    "prefix": "sage-font-weight",
+    "body": "sage-font-weight(${1|regular,medium,semibold,bold|})$2",
+    "description": "Sage font-weight mixin. If empty, defaults to `regular`"
+  },
+  "sage-grid-template": {
+    "prefix": "sage-grid-template",
+    "body": "sage-grid-template(${1|e,i,s,t,m,o,se,si,ss,ot,om,oo,et,em,eo,it,im,io,st,sm,so,te,ti,ts,me,mi,ms,oe,oi,os,ete,eti,ets,eme,emi,ems,eoe,eoi,eos,ite,iti,its,ime,imi,ims,ioe,ioi,ios,ste,sti,sts,sme,smi,sms,soe,soi,sos|})$2",
+    "description": "Sage grid-template mixin. Uses predefined grid configurations based on morse code"
+  },
+  "sage-letter-spacing": {
+    "prefix": "sage-letter-spacing",
+    "body": "sage-letter-spacing(${1|xs,sm,md,lg|})$2",
+    "description": "Sage letter spacing mixin. When empty, will default to `sm` / rem(0.3px)"
+  },
+  "sage-line-height": {
+    "prefix": "sage-line-height",
+    "body": "sage-line-height(${1|xs,sm,md,lg,xl|})$2",
+    "description": "Sage line-height value. If empty, will default to `md` / sage-baseline(7)"
+  },
+  "sage-shadow": {
+    "prefix": "sage-shadow",
+    "body": "sage-shadow(${1|sm,md,lg,modal|})$2",
+    "description": "Sage box-shadow value. If empty, defaults to `md`"
+  },
+  "sage-spacing": {
+    "prefix": "sage-spacing",
+    "body": "sage-spacing(${1|3xs,2xs,xs,sm,md,lg,xl,2xl|})$2",
+    "description": "Sage spacing value. Empty values default to `md` / rem(24px)"
+  },
+  "sage-z-index": {
+    "prefix": "sage-z",
+    "body": "sage-z_index(${1|default,negative,raised,alert,underlay,nav,overlay,modal,priority,nuclear|}$2)$3",
+    "description": "Output system z-index value. Empty values are set to `default` (0) and can be optionally incremented"
+  }
+}
