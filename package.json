@@ -9,19 +9,37 @@
     "vscode": "^1.74.0"
   },
   "categories": [
+    "Snippets",
     "Other"
   ],
   "activationEvents": [
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
     "onCommand:kajabi-sage.openSageReact",
+    "onCommand:kajabi-sage.openSageSass",
     "onCommand:kajabi-sage.openSageDocs",
     "onCommand:kajabi-sage.sage"
   ],
   "main": "./extension.js",
   "contributes": {
+    "snippets": [
+      {
+        "language": "css",
+        "path": "./snippets/sagetokens.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/sagetokens.json"
+      }
+    ],
     "commands": [
       {
         "command": "kajabi-sage.openSageReact",
         "title": "Sage React Storybook"
+      },
+      {
+        "command": "kajabi-sage.openSageSass",
+        "title": "Sage SassDocs"
       },
       {
         "command": "kajabi-sage.openSageDocs",

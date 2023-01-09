@@ -24,25 +24,26 @@ function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "kajabi-sage" is now active!');
+	console.log('Kajabi extension activated 😎');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable1 = vscode.commands.registerCommand('kajabi-sage.openSageReact', function () {
-		// The code you place here will be executed every time your command is executed
 
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Openning react docs!');
+	let sageDocsLink = vscode.commands.registerCommand('kajabi-sage.openSageDocs', function () {
+    vscode.window.showInformationMessage('Opening Sage Docs…');
+    vscode.env.openExternal(vscode.Uri.parse('https://sage.kajabi.com/'));
+	});
+
+	let sageStorybookLink = vscode.commands.registerCommand('kajabi-sage.openSageReact', function () {
+    vscode.window.showInformationMessage('Opening Sage Storybook…');
     vscode.env.openExternal(vscode.Uri.parse('https://sage-lib-storybook.herokuapp.com/'));
 	});
 
-	let disposable2 = vscode.commands.registerCommand('kajabi-sage.openSageDocs', function () {
-		// The code you place here will be executed every time your command is executed
 
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Opening Sage docs!');
-    vscode.env.openExternal(vscode.Uri.parse('https://sage-design-system.kajabi.com/pages/index'));
+	let sageSassDocsLink = vscode.commands.registerCommand('kajabi-sage.openSageSass', function () {
+		vscode.window.showInformationMessage('Opening Sage SassDocs…');
+    vscode.env.openExternal(vscode.Uri.parse('https://sage-lib-sassdocs.herokuapp.com/'));
 	});
 
   const sageElements = buttons.buttons.concat(accordions.accordions);
@@ -75,8 +76,9 @@ function activate(context) {
   //   context.subscriptions.push(disposable);
   // });
 
-	context.subscriptions.push(disposable1);
-	context.subscriptions.push(disposable2);
+	context.subscriptions.push(sageDocsLink);
+	context.subscriptions.push(sageStorybookLink);
+	context.subscriptions.push(sageSassDocsLink);
 }
 
 // This method is called when your extension is deactivated
