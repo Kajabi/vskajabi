@@ -39,9 +39,9 @@
     "body": "sage-font-weight(${1|regular,medium,semibold,bold|})$2",
     "description": "Sage font-weight mixin. Omitted values default to `regular`"
   },
-  "sage-grid-gap-option": {
+  "sage-grid-gap-options": {
     "prefix": "sage-grid-gap-options",
-    "body": "map-get($$sage-grid-gap-options, ${1|xs,sm,md,lg|})$2",
+    "body": "sage-grid-gap-options(${1|xs,sm,md,lg|})$2",
     "description": "Outputs Sage grid gap spacing value."
   },
   "sage-grid-template": {

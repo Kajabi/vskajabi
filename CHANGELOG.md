@@ -12,3 +12,7 @@ All notable changes to the "kajabi-sage" extension will be documented in this fi
 - Revised documentation links
 - Updated README description
 - Added extension image/icon
+
+## [0.1.1]
+
+- Corrected `sage-grid-gap-options` snippet output
