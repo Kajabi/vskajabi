@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: vskajabi
+  description: |
+    VSCode extension for working with Sage @ Kajabi
+  tags:
+    - vscode
+    - extension
+    - javascript
+    - typescript
+    - sage
+  annotations:
+    backstage.io/source-location: url:https://github.com/Kajabi/vskajabi/tree/main
+    github.com/project-slug: Kajabi/vskajabi
+spec:
+  type: library
+  owner: design-system-services
+  lifecycle: experimental
