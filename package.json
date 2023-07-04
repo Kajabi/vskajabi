@@ -1,10 +1,11 @@
 {
   "name": "kajabi",
   "displayName": "Kajabi",
-  "description": "Kajabi Utilities",
+  "description": "Utilities for Kajabi engineers",
   "publisher": "kajabi",
   "repository": "https://github.com/Kajabi/vskajabi",
-  "version": "0.0.1",
+  "icon": "img/kajabi-logo.png",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.74.0"
   },
